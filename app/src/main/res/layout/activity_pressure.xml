@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pressure">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="53dp"
+        android:text="@string/toPressureButton"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/highPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/highPressure"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="54dp"
+        android:ems="10"
+        android:hint="@string/highPressure"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/lowPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head" />
+
+    <EditText
+        android:id="@+id/lowPressure"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:hint="@string/lowPressure"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/pulse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highPressure" />
+
+    <EditText
+        android:id="@+id/pulse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="61dp"
+        android:ems="10"
+        android:hint="@string/pulse"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/dateAndTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lowPressure" />
+
+    <EditText
+        android:id="@+id/dateAndTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="@string/dateAndTime"
+        android:inputType="datetime"
+        app:layout_constraintBottom_toTopOf="@+id/tachycardia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pulse" />
+
+    <CheckBox
+        android:id="@+id/tachycardia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/tachycardia"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateAndTime" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="saveButtonClicked"
+        android:text="@string/saveButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tachycardia"
+        app:layout_constraintTop_toBottomOf="@+id/tachycardia" />
+</androidx.constraintlayout.widget.ConstraintLayout>

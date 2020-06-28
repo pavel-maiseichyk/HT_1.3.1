@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HT_1.3.1</string>
+    <string name="head">Комплексная система мониторинга здоровья</string>
+    <string name="saveButton">Сохранить</string>
+    <string name="toVitalsButton">Показатели</string>
+    <string name="toPressureButton">Давление</string>
+    <string name="highPressure">Введите верхнее давление</string>
+    <string name="lowPressure">Введите нижнее давление</string>
+    <string name="pulse">Введите пульс</string>
+    <string name="name">Введите ФИО</string>
+    <string name="weight">Введите вес</string>
+    <string name="steps">Введите количество шагов</string>
+    <string name="age">Введите возраст</string>
+    <string name="dateAndTime">Дата замера</string>
+    <string name="tachycardia">Тахикардия</string>
+    <string name="author">by Pavel Maiseichyk</string>
+</resources>
